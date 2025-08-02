@@ -1,6 +1,5 @@
 import { Icon } from "@/app/svgs/Icons";
 import Image from "next/image";
-import Link from "next/link";
 
 const SocialIcons = [
   {
@@ -19,13 +18,13 @@ const SocialIcons = [
         className="size-[1.65em] opacity-65 hover:text-blue-500"
       />
     ),
-    link: "",
+    link: "https://www.linkedin.com/in/sumit-dey-640700243/",
   },
   {
     icon: (
       <Icon name="X" className="size-[1.65em] opacity-65 hover:opacity-100" />
     ),
-    link: "",
+    link: "https://x.com/SUMITDE67155401/",
   },
 ];
 
@@ -42,14 +41,15 @@ function Navbar() {
 
       <div className="flex items-center">
         {SocialIcons.map((icon, idx) => (
-          <Link
-            key={`${icon}-${idx}`}
+          <a
             href={icon.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            key={`${icon}-${idx}`}
             className="hover:scale-125 hover:transition-all p-4"
-            
           >
             {icon.icon}
-          </Link>
+          </a>
         ))}
       </div>
     </div>
