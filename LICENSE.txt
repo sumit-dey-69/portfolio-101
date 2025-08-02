@@ -1,0 +1,14 @@
+UNLICENSED – All Rights Reserved
+
+Copyright © Sumit Dey 2025
+
+This source code is the intellectual property of the copyright holder.  
+You are NOT permitted to:
+
+- Copy, modify, or distribute this code, in whole or in part.
+- Use this code in any commercial or non-commercial project.
+- Host this code or its derivatives on any public or private platform.
+
+Any unauthorized use is strictly prohibited.
+
+For licensing requests or special permissions, please contact: contact@sumitdey.dev
