@@ -1,8 +1,45 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🧑‍💻 Sumit Dey — Developer Portfolio
 
-## Getting Started
+Welcome to my personal developer portfolio built using **Next.js** and **Tailwind CSS**.
 
-First, run the development server:
+This website is a reflection of my journey as a **Modern Front-End Developer** — showcasing my skills, tools I use, and the projects I’ve worked on.
+
+## 📸 Preview
+
+Here’s a quick glimpse
+
+![Portfolio Preview](./preview.png)
+
+> Specialized in building fast, responsive web apps with **ReactJS**, **NextJS**, and **Tailwind CSS**.
+
+---
+
+## 🚀 Tech Stack
+
+* ⚛️ **Next.js** – App directory and SSR
+* 🎨 **Tailwind CSS** – Utility-first styling
+* 🟧 **TypeScript**
+* 🔶 **Prisma** (for backend/data access)
+* ✏️ **Figma** – for UI/UX design
+
+## 📦 Installation
+
+To run this project locally:
+
+```bash
+git clone https://github.com/sumit-dey-69/portfolio-101.git
+cd portfolio-101
+```
+
+```bash
+npm install
+# or
+yarn install
+# or
+pnpm install
+# or
+bun install
+```
 
 ```bash
 npm run dev
@@ -14,23 +51,65 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Then visit: [http://localhost:3000](http://localhost:3000)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📁 Folder Structure
 
-## Learn More
+```
+.
+├── app/                 # Pages using Next.js app directory
+├── components/          # Reusable UI components
+├── public/              # Static files (images, icons, etc.)
+├── styles/              # Global and component-specific styles
+├── tailwind.config.js   # Tailwind CSS configuration
+└── ...
+```
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## ✨ Features
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+* Smooth and responsive UI
+* Modern grid background animation
+* Social links: GitHub, LinkedIn, Twitter
+* Technologies displayed with badges
+* Clean typography and layout
+* Optimized for performance
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📬 Contact
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+If you’d like to connect or collaborate:
+
+* GitHub: [@sumit-dey-69](https://github.com/sumit-dey-69)
+* LinkedIn: [Sumit Dey](https://www.linkedin.com/in/sumit-dey-640700243/)
+* Email: [sumitdey.dev@gmail.com](mailto:sumitdey.dev@gmail.com)
+
+---
+
+## 📄 License
+
+**UNLICENSED — All Rights Reserved**
+
+This source code is the intellectual property of the copyright holder.
+You are **NOT permitted** to:
+
+* Copy, modify, or distribute this code, in whole or in part.
+* Use this code in any commercial or non-commercial project.
+* Host this code or its derivatives on any platform.
+
+> Any unauthorized use is strictly prohibited.
+
+For permissions or inquiries, contact: [sumitdey.dev@gmail.com](mailto:sumitdey.dev@gmail.com)
+
+---
+
+## ⭐ Acknowledgements
+
+* Thanks to the open-source ecosystem
+* Inspired by modern developer portfolio trends
+
+---
