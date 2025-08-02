@@ -4,7 +4,7 @@ import { useMotionValue, useSpring } from "motion/react";
 import { useEffect, useRef, useState } from "react";
 
 const NUM_TRAILS = 50;
-const STROKE_COLOR = "red";
+const STROKE_COLOR = "#ffa600";
 const STROKE_WIDTH = 60;
 
 type Point = { x: number; y: number };
