@@ -58,8 +58,8 @@ const elements = TechStacks.concat(TechStacks)
 
 function MovingSlider({ className }: Props) {
   return (
-    <div className={cn("absolute bottom-0 h-30 w-full z-10", className)}>
-      <div className={"bg-[#ff6200] w-full whitespace-nowrap rotate-3"}>
+    <div className={cn("absolute bottom-0 h-20 sm:h-30 w-full z-10", className)}>
+      <div className={"bg-[#ff6200] w-full whitespace-nowrap rotate-3 overflow-hidden"}>
         <motion.span
           animate={{ x: ["0%", "-100%"] }}
           transition={{
@@ -67,12 +67,12 @@ function MovingSlider({ className }: Props) {
             ease: "linear",
             repeat: Infinity,
           }}
-          className="flex gap-10 text-white font-extrabold h-12 items-center w-full"
+          className="flex gap-6 sm:gap-10 text-white font-extrabold h-10 sm:h-12 items-center w-full"
         >
           {elements?.map((el, i) => (
-            <div className="inline-flex gap-[0.25em] items-center mx-8 text-xl" key={i}>
+            <div className="inline-flex gap-[0.25em] items-center mx-4 sm:mx-8 text-sm sm:text-xl" key={i}>
               <p>{el.icon}</p>
-              <p>{el.name}</p>
+              <p className="hidden sm:block">{el.name}</p>
             </div>
           ))}
         </motion.span>

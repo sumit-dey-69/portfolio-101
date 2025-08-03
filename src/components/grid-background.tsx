@@ -18,7 +18,7 @@ export function GridBackground({ className, children }: Props) {
       <div
         className={cn(
           "absolute inset-0",
-          "[background-size:60px_60px]",
+          "[background-size:30px_30px] sm:[background-size:45px_45px] md:[background-size:60px_60px]",
           "[background-image:linear-gradient(to_right,#f7c59a_1px,transparent_0.5px),linear-gradient(to_bottom,#f7c59a_1px,transparent_0.5px)]"
         )}
       />

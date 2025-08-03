@@ -11,6 +11,7 @@ const pangaiaSans = localFont({
 export const metadata: Metadata = {
   title: "Portfolio - Sumit Dey",
   description: "Showcase",
+  viewport: "width=device-width, initial-scale=1, maximum-scale=1",
 };
 
 export default function RootLayout({
@@ -21,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${pangaiaSans.variable} overflow-hidden cursor-none antialiased`}
+        className={`${pangaiaSans.variable} overflow-hidden antialiased`}
       >
         <TrailEffect />
         {children}

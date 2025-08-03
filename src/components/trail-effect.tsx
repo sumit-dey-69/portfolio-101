@@ -5,19 +5,32 @@ import { useEffect, useRef, useState } from "react";
 
 const NUM_TRAILS = 50;
 const STROKE_COLOR = "#ffa600";
-const STROKE_WIDTH = 60;
+const STROKE_WIDTH = 30;
 
 type Point = { x: number; y: number };
 
 export default function TrailEffect() {
   const mouse = useRef<Point>({ x: 0, y: 0 });
   const [ready, setReady] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
 
   const x = useMotionValue(0);
   const y = useMotionValue(0);
 
   const springX = useSpring(x, { damping: 40, stiffness: 300 });
   const springY = useSpring(y, { damping: 40, stiffness: 300 });
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const checkMobile = () => {
+        setIsMobile(window.innerWidth < 768);
+      };
+      
+      checkMobile();
+      window.addEventListener("resize", checkMobile);
+      return () => window.removeEventListener("resize", checkMobile);
+    }
+  }, []);
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -59,6 +72,10 @@ export default function TrailEffect() {
     frameId = requestAnimationFrame(update);
     return () => cancelAnimationFrame(frameId);
   }, [springX, springY, ready]);
+
+  if (isMobile) {
+    return null;
+  }
 
   return (
     <svg
